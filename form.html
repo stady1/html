@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Sample</title>
+</head>
+<body>
+    <header>
+        <h1>Form Sample</h1>
+        <nav>
+            <a href="index.html">Homepage</a>
+        </nav>
+    </header>
+    
+    
+    <section>
+        <h2>Form</h2>
+        <form method="POST" action="https://formspree.io/asapyi@gmail.com">
+            <label for="user-name">User name:</label>
+            <input id="user-name" type="text" placeholder="User name"
+             name="user-name" required>
+            <br> 
+            <label>
+                User email:<input type="email" placeholder="User email"
+                             name="user-email" required>
+            </label> 
+            <br>
+            <label>
+                User password: <input type="password" placeholder="Password"
+                                name="password">
+            </label>  
+            <br>
+            <label>
+                Car plate: <input type="text" placeholder="AA1234BB"
+                                name="car-plate" pattern="[A-Z]{2}[\d]{4}[A-Z]{2}"
+                                title="AA1234BB">
+            </label>  
+            <br>
+            <label>Gender:</label>
+            <label>
+                <input type="radio" name="gender" value="male" checked>
+                Male
+            </label>    
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>    
+            <label>
+                <input type="radio" name="gender" value="other">
+                Other
+            </label> 
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </section>
+</body>
+</html>
